@@ -1,0 +1,73 @@
+.main{
+
+}
+
+/* HTMLとbodyのマージンとパディングをリセット */
+html, body {
+  margin: 0;
+  padding: 0;
+  /* ビューポートの高さに合わせるために追加 */
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 460px;
+  height: auto;
+  margin: 10px auto 0;
+  background-image: url('./images/background_fruits.png'); /* 背景画像のURL */
+  background-size: cover; /* 背景画像をコンテナのサイズに合わせて調整 */
+  background-position: center; /* 背景画像を中央に配置 */  
+}
+
+
+.message {
+  position: absolute;
+  display: none;
+  text-align: center;
+  top: 400px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.8);
+  padding: 0 0 30px;
+}
+.message p {
+  margin: 0px;
+}
+.mainText {
+  font-size: 64px;
+  color: #F00;
+}
+.subText {
+  font-size: 32px;
+  color: #000;
+}
+
+.button {
+  width: 150px;
+  height: 40px;
+  font-size: 24px;
+
+}
+
+.score-display {
+  position: absolute;
+  top: 55px; /* 画面の上部に配置 */
+  right: 285px; /* 右端からの距離 */
+  padding: 10px;
+  background-color: transparent; /* 背景色を透明に設定 */
+  color: black; /* 文字色 */
+  font-size: 40px; /* 文字サイズ */
+  z-index: 100; /* 他の要素より前面に表示 */
+}
+
+.next-bubble-preview {
+  width: 60px; /* プレビュー領域の幅 */
+  height: 60px; /* プレビュー領域の高さ */
+  position: absolute; /* ゲームコンテナ内の任意の位置に配置 */
+  top: 90px; /* 上端からの距離 */
+  right: 50px; /* 右端からの距離 */
+  background-color: transparent; /* 背景色を透明に設定 */
+  /*border: 2px solid #ddd; /* 枠線を追加 */
+  background-size: cover; /* バブル画像がプレビュー領域にぴったり収まるように設定 */
+  background-position: center; /* 画像を中央に配置 */
+}
