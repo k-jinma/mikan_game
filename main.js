@@ -23,7 +23,7 @@ const WALL_COLOR = "#a70";      // 壁の色（HTMLカラーコードで変更�
 const USE_ANIMAL_IMAGES = false; // true: 動物画像を使う, false: 果物画像を使う
 
 // 果物の画像パス（レベル0～10）
-// 自分で画像を追加したい場合は、imagesフォルダに画像を入れてパスを書き換えてね！
+// 自分で画像を追加したい場合は、imagesフォルダに画像を入れてパスを変更
 const FRUIT_IMAGES = {
   0: "./images/fruits/00_cherry.png",      // レベル0: さくらんぼ（一番小さい）
   1: "./images/fruits/01_strawberry.png",  // レベル1: いちご
