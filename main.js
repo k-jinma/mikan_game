@@ -194,7 +194,7 @@ class BubbeGame {
   // ============================================
   // ランダムなフルーツのレベルを生成（0～4）
   // ============================================
-  // 【改造ポイント】Math.random() * 5 の「5」を変えると出現するフルーツが変わるよ！
+  // Math.random() * 5 の「5」を変えると出現するフルーツが変化
   // 例: Math.random() * 3 なら 0～2（小さいフルーツだけ）
   // 例: 4 + Math.random() * 2 なら 4～5（大きいフルーツだけ）
   getRandomBubbleLevel() {
@@ -356,7 +356,7 @@ class BubbeGame {
       this.gameStatus = "interval";  // 連打防止のため一時的に置けない状態に
       
       // 0.5秒後に次のフルーツを作成
-      // 【改造ポイント】500を変えると次のフルーツが出るまでの時間が変わるよ！（ミリ秒）
+      // 500を変えると次のフルーツが出るまでの時間が変化（ミリ秒）
       setTimeout(() => {
         this.createNewBubble();
         this.gameStatus = "canput";  // 再び置ける状態に
@@ -385,7 +385,7 @@ class BubbeGame {
         const currentBubbleLevel = Number(bodyA.label.substring(7));  // レベルを取得
         
         // スコア加算（2のレベル乗）
-        // 【改造ポイント】2 ** currentBubbleLevel を変えるとスコアの増え方が変わるよ！
+        // currentBubbleLevel を変えるとスコアの増え方が変化
         this.setScore(this.score + 2 ** currentBubbleLevel);
         
         // 最大レベル（11）の場合は合体せずに消滅
