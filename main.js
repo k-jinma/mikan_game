@@ -1,7 +1,7 @@
 // ============================================
 // みかんゲーム（スイカゲーム風）
 // ============================================
-const { Bodies, Body, Composite, Engine, Events, Render, Runner, Sleeping } = Matter;
+const { Bodies, Body, Composite, Engine, Events, Render, Runner, Sleeping } = Matter; // Matter.jsの機能をインポート
 
 // ============================================
 // ゲーム設定（ここを変えるとゲームの見た目や動きが変わります！）
